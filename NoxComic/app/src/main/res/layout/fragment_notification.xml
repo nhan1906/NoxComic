@@ -1,0 +1,9 @@
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notificationRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zenlife.nox.noxcomic.mainhome.home.NotificationFragment"
+    android:background="@color/windowPrimaryBackground"
+    tools:listitem="@layout/item_notification">
+</android.support.v7.widget.RecyclerView>

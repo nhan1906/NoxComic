@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#565ABB</color>
+
+    <color name="colorHighlight">#4FC3F7</color>
+
+    <color name="windowPrimaryBackground">#FFFFFF</color>
+
+    <color name="colorBottomNavDefault">#777777</color>
+    <color name="colorBackgroundBottomNav">#565ABB</color>
+
+    <color name="colorMainText">#303030</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zenlife.nox.noxcomic.mainhome.home.MainFragment"
+    android:background="@color/windowPrimaryBackground">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.005dp"
+                android:background="@android:color/black"
+                android:alpha="0.2"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <zenlife.nox.noxcomic.utils.WrapContentViewPager
+                    android:id="@+id/slideImageViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom"
+                    app:ci_drawable="@color/colorAccent"
+                    />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/layout_comic_coming_soon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <zenlife.nox.noxcomic.utils.NoyhrFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Truyen vua ra trong tuan"
+                            android:textSize="20sp"
+                            android:layout_marginBottom="8dp"/>
+                        <zenlife.nox.noxcomic.utils.NoyhrFontTextView
+                            android:id="@+id/seeAllTextview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="See all"
+                            android:textSize="20sp"
+                            android:gravity="right"
+                            android:layout_marginBottom="8dp"/>
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recentRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"/>
+                </LinearLayout>
+
+                <include
+                    layout="@layout/layout_most_recent_comic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <zenlife.nox.noxcomic.utils.NoyhrFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Truyen vua ra trong tuan"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="8dp"/>
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/popularRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <zenlife.nox.noxcomic.utils.NoyhrFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Truyen vua ra trong tuan"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="8dp"/>
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/mostRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"/>
+                </LinearLayout>
+
+                <include
+                    layout="@layout/layout_full_comic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

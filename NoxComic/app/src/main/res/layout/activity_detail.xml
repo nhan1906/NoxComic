@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zenlife.nox.noxcomic.DetailActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/jack"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="18dp"
+                        android:layout_gravity="center">
+                        <zenlife.nox.noxcomic.utils.NoyhrFontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The Girl Who Sees Smells"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="left">
+                                <ImageView
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:src="@drawable/icon_love"
+                                    android:layout_gravity="center" />
+                                <zenlife.nox.noxcomic.utils.NoyhrFontTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="   53"
+                                    android:gravity="center|left"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:src="@drawable/icon_chart"
+                                    android:layout_gravity="center" />
+                                <zenlife.nox.noxcomic.utils.NoyhrFontTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="   53"
+                                    android:gravity="center|left"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:src="@drawable/icon_star"
+                                    android:layout_gravity="center" />
+                                <zenlife.nox.noxcomic.utils.NoyhrFontTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="   53"
+                                    android:gravity="center|left"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <zenlife.nox.noxcomic.utils.NoyhrFontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The stown uniqst - Emma Fierro"/>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/readComic"
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:text="Read comic"
+                        android:layout_gravity="center"
+                        android:background="@drawable/background_coming_soon"/>
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarDetail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/card_item_episode"
+                    />
+                <include
+                    layout="@layout/card_item_episode"
+                    />
+                <include
+                    layout="@layout/card_item_episode"
+                    />
+                <include
+                    layout="@layout/card_item_episode"
+                    />
+                <include
+                    layout="@layout/card_item_episode"
+                    />
+                <include
+                    layout="@layout/card_item_episode"
+                    />
+                <include
+                    layout="@layout/card_item_episode"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

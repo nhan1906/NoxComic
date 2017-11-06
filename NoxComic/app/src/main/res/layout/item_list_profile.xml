@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_item"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="3dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/item_comic"/>
+    </android.support.v7.widget.CardView>
+    <zenlife.nox.noxcomic.utils.NoyhrFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="the love of me"
+        android:layout_below="@id/card_item"
+        android:layout_gravity="bottom"
+        android:gravity="center"/>
+</RelativeLayout>

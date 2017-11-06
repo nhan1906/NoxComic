@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icon_book"
+        android:title="@string/nav_bottom_comics"
+        />
+    <item
+        android:id="@+id/navigation_category"
+        android:icon="@drawable/icon_library"
+        android:title="@string/nav_bottom_library"
+        />
+
+    <item
+        android:id="@+id/navigation_notification"
+        android:icon="@drawable/icon_message"
+        android:title="@string/nav_bottom_message"
+        />
+</menu>
